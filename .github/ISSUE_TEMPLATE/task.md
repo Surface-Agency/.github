@@ -2,7 +2,7 @@
 name: Task
 about: Track scoped implementation, analysis, or repo hygiene work
 title: ""
-labels: ""
+labels: "type: chore"
 assignees: ""
 ---
 
@@ -12,10 +12,19 @@ assignees: ""
 ## Context
 
 
+## Scope
+
+- 
+
 ## Done When
 
 - 
 
-## Notes
+## Validation
 
+- [ ] Relevant local checks, QA queries, or builds were run.
+- [ ] Docs, runbooks, or caveats were updated when behavior changed.
+- [ ] No secrets, credentials, raw exports, or client-sensitive generated files were added.
+
+## Notes
 
