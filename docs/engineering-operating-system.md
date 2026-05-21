@@ -28,6 +28,8 @@ Core labels:
 
 Labels should help humans and agents route work quickly. Avoid one-off labels unless they are truly reusable.
 
+When creating a new active repository, add it to the sync script and run the script once. Do not include archived repos or short-lived experiments unless they are expected to receive issues or PRs.
+
 ## Templates
 
 Default templates live in this `.github` repository and apply to repositories that do not override them locally.
@@ -45,3 +47,16 @@ PRs should state what changed, how it was checked, and whether docs/runbooks/cav
 - `.github/copilot-instructions.md`
 
 Automation can triage and comment, but humans should still own decisions that change production behavior, expose client-sensitive information, or depend on business judgment.
+
+## Security Ownership
+
+The shared `SECURITY.md` applies across organization repositories unless a repo defines a more specific policy. Security reports should stay private until triaged. Do not ask reporters to disclose secrets, client data, or vulnerability details in public issues.
+
+Security-related follow-up should use `type: security` and `needs-human-review` unless it is clearly a routine dependency update with passing checks.
+
+## Current Risks And Next Decisions
+
+- Create an `engineering` team when full-time engineers join, then map repo permissions to teams instead of individuals.
+- Consider org-level rulesets once branch protection behavior is stable across repos.
+- Keep Packages off until we identify shared code that deserves versioned reuse.
+- Review the PR triage automation after a few runs and decide whether it should open issues for repeated failure patterns.
