@@ -12,9 +12,6 @@ GitHub applies these templates to repositories that do not define their own loca
 - `.github/ISSUE_TEMPLATE/task.md`: default scoped task template.
 - `.github/ISSUE_TEMPLATE/nonconformance.md`: template for data/process failures and corrective actions.
 - `.github/ISSUE_TEMPLATE/repo-readiness.md`: handoff checklist for preparing repos for future engineers.
-- `docs/engineering-operating-system.md`: conventions for projects, labels, templates, and PR review.
-- `docs/repository-inventory.md`: lifecycle classification for active, sidecar, reference, superseded, and archived repositories.
-- `scripts/sync_labels.sh`: repeatable label taxonomy sync for active repositories.
 
 ## Project Board
 
@@ -26,19 +23,7 @@ Use the board for cross-repo work, repo-readiness tracking, blocked decisions, s
 
 ## Repository Inventory
 
-Use `docs/repository-inventory.md` before creating cross-repo issues, extending an older repository, or deciding whether a repo should be archived. Repositories marked `active` are safe default targets for new work. Repositories marked `sidecar`, `reference`, `superseded`, or `archive-candidate` need owner judgment before they receive new feature work.
-
-## Label Sync
-
-Run the label sync after adding a new active repo or changing the label taxonomy:
-
-```bash
-./scripts/sync_labels.sh
-```
-
-The script uses the GitHub CLI and expects `gh` to be authenticated with access to the `Surface-Agency` organization.
-
-Before adding a repo to the script, confirm it is active and should follow the shared taxonomy. Archived or one-off repositories should stay out unless they are coming back into active use.
+Internal repo inventory, lifecycle decisions, label sync, permissions notes, and ruleset readiness docs live in the private `surface-agency-governance` repository. Do not place private repository lists, team mapping, or permission details in this public `.github` repo.
 
 ## Shared Template Updates
 
