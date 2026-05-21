@@ -31,7 +31,7 @@ This inventory classifies every repository in the Surface Agency organization so
 | `red-robin-lvrb-dashboard` | Red Robin | active | Source-of-truth workspace for Red Robin paid media, store performance, POS, and Looker Studio dashboards. |
 | `red-robin-channel-store-pacing` | Red Robin | reference | Earlier channel/store pacing report; confirm before extending because `red-robin-media-pacing` is now canonical for pacing. |
 | `RedRobin_Reporting` | Red Robin | reference | Legacy period reporting context; prefer `red-robin-recap` for active recap generation. |
-| `pacing-monitor` | Red Robin | superseded, archive-candidate | Legacy/experimental pacing monitor prototype. Active pacing alert development lives in `red-robin-media-pacing`. |
+| `pacing-monitor` | Red Robin | superseded, retained | Legacy/experimental pacing monitor prototype. Do not start new active work here because `red-robin-media-pacing` supersedes it, but do not archive until media-pacing is fully in production. |
 | `meta-ads-dedup` | Platform | sidecar | Meta Ads deduplication utility; needs a README/status pass before being treated as active. |
 | `productive-codex-time` | Agency Ops | active | Local-first Codex work-session time tracking with explicit Productive posting. |
 | `demo-repository` | Agency Ops | archived | GitHub demo repository; keep archived. |
@@ -43,10 +43,10 @@ This inventory classifies every repository in the Surface Agency organization so
 - `reference` repositories should not receive new feature work without first being reclassified.
 - `superseded` repositories should point to the replacement repo in their description and README.
 - `archive-candidate` repositories can be archived after the owner confirms no active automations, credentials, dashboards, or scheduled jobs depend on them.
+- `superseded, retained` repositories should stay available as fallback/reference context, but should not receive new feature work.
 
 ## Immediate Follow-Ups
 
-- Confirm whether `pacing-monitor` can be archived now that `red-robin-media-pacing` is the canonical pacing alert path.
 - Give `meta-ads-dedup` a README/status pass so it is clear whether it is active, sidecar, or reference.
 - Confirm whether `red-robin-channel-store-pacing` is purely historical or still feeds any live Sheets/reporting flow.
 - Confirm whether `RedRobin_Reporting` should remain reference-only or be archived after `red-robin-recap` has fully replaced it.
