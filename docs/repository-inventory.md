@@ -30,7 +30,7 @@ This inventory classifies every repository in the Surface Agency organization so
 | `red-robin-mmm` | Red Robin | sidecar | Media mix modeling and period-planning workflow; keep separate from pacing/reporting production paths. |
 | `red-robin-lvrb-dashboard` | Red Robin | active | Source-of-truth workspace for Red Robin paid media, store performance, POS, and Looker Studio dashboards. |
 | `red-robin-channel-store-pacing` | Red Robin | sidecar, retained | Earlier channel/store pacing and weekly spend Sheet workflow. Do not add new production pacing features here; retain until Monday pacing and Sheet dependencies are confirmed or migrated to `red-robin-media-pacing`. |
-| `RedRobin_Reporting` | Red Robin | reference | Legacy period reporting context; prefer `red-robin-recap` for active recap generation. |
+| `RedRobin_Reporting` | Red Robin | reserved, retained | Reserved paid-media period-reporting workspace. Currently contains guidance only, not an implemented workflow; check with the owner before adding reporting logic or retiring it. |
 | `pacing-monitor` | Red Robin | superseded, retained | Legacy/experimental pacing monitor prototype. Do not start new active work here because `red-robin-media-pacing` supersedes it, but do not archive until media-pacing is fully in production. |
 | `meta-ads-dedup` | Platform | sidecar | Early human-reviewed QA utility for Adplorer-to-Meta creative push issues. Detects duplicate active Meta ads by ad set and exact ad name; not production automation. |
 | `productive-codex-time` | Agency Ops | active | Local-first Codex work-session time tracking with explicit Productive posting. |
@@ -47,4 +47,4 @@ This inventory classifies every repository in the Surface Agency organization so
 
 ## Immediate Follow-Ups
 
-- Confirm whether `RedRobin_Reporting` should remain reference-only or be archived after `red-robin-recap` has fully replaced it.
+- Confirm with the paid-media owner whether `RedRobin_Reporting` should eventually hold period-reporting assets or remain reserved while active recap work continues in `red-robin-recap`.
