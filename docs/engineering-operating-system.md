@@ -15,6 +15,16 @@ Recommended use:
 
 Keep the board practical. Small local fixes can stay as PRs or issues in one repo; cross-repo, blocked, strategic, or handoff work belongs in the project.
 
+## Repository Lifecycle
+
+Use `docs/repository-inventory.md` as the source of truth for repository status before opening cross-repo issues or extending an older workflow.
+
+- `active` repositories are current operating paths.
+- `sidecar` repositories support comparison, experimentation, or transition work.
+- `reference` repositories are retained for history and should not receive new feature work without reclassification.
+- `superseded` repositories should clearly point to the replacement workflow.
+- `archive-candidate` repositories should be archived after owner confirmation that no live jobs, dashboards, or credentials depend on them.
+
 ## Labels
 
 Shared labels are synced by `scripts/sync_labels.sh`.

@@ -13,6 +13,7 @@ GitHub applies these templates to repositories that do not define their own loca
 - `.github/ISSUE_TEMPLATE/nonconformance.md`: template for data/process failures and corrective actions.
 - `.github/ISSUE_TEMPLATE/repo-readiness.md`: handoff checklist for preparing repos for future engineers.
 - `docs/engineering-operating-system.md`: conventions for projects, labels, templates, and PR review.
+- `docs/repository-inventory.md`: lifecycle classification for active, sidecar, reference, superseded, and archived repositories.
 - `scripts/sync_labels.sh`: repeatable label taxonomy sync for active repositories.
 
 ## Project Board
@@ -22,6 +23,10 @@ Cross-repo work lives in the org Project:
 - [Agency Engineering](https://github.com/orgs/Surface-Agency/projects/1)
 
 Use the board for cross-repo work, repo-readiness tracking, blocked decisions, security/process follow-up, and tasks that should be visible outside a single repository.
+
+## Repository Inventory
+
+Use `docs/repository-inventory.md` before creating cross-repo issues, extending an older repository, or deciding whether a repo should be archived. Repositories marked `active` are safe default targets for new work. Repositories marked `sidecar`, `reference`, `superseded`, or `archive-candidate` need owner judgment before they receive new feature work.
 
 ## Label Sync
 

@@ -18,6 +18,8 @@ Most repositories are private because they contain client-specific operational c
 
 We keep repositories documentation-first, with clear runbooks, source-system notes, QA checks, and nonconformance reports where they help future work stay traceable. Changes should preserve that habit: explain the source of truth, the grain of the data, the expected outputs, and the practical caveats.
 
+Repositories are classified by lifecycle so contributors and coding agents can tell which projects are active, sidecar, reference-only, superseded, or ready to archive. The inventory lives in the `.github` repository alongside the shared engineering operating docs.
+
 ## Links
 
 - Website: https://surfaceagency.co/
