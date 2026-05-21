@@ -32,7 +32,7 @@ This inventory classifies every repository in the Surface Agency organization so
 | `red-robin-channel-store-pacing` | Red Robin | reference | Earlier channel/store pacing report; confirm before extending because `red-robin-media-pacing` is now canonical for pacing. |
 | `RedRobin_Reporting` | Red Robin | reference | Legacy period reporting context; prefer `red-robin-recap` for active recap generation. |
 | `pacing-monitor` | Red Robin | superseded, retained | Legacy/experimental pacing monitor prototype. Do not start new active work here because `red-robin-media-pacing` supersedes it, but do not archive until media-pacing is fully in production. |
-| `meta-ads-dedup` | Platform | sidecar | Meta Ads deduplication utility; needs a README/status pass before being treated as active. |
+| `meta-ads-dedup` | Platform | sidecar | Early human-reviewed QA utility for Adplorer-to-Meta creative push issues. Detects duplicate active Meta ads by ad set and exact ad name; not production automation. |
 | `productive-codex-time` | Agency Ops | active | Local-first Codex work-session time tracking with explicit Productive posting. |
 | `demo-repository` | Agency Ops | archived | GitHub demo repository; keep archived. |
 
@@ -47,6 +47,5 @@ This inventory classifies every repository in the Surface Agency organization so
 
 ## Immediate Follow-Ups
 
-- Give `meta-ads-dedup` a README/status pass so it is clear whether it is active, sidecar, or reference.
 - Confirm whether `red-robin-channel-store-pacing` is purely historical or still feeds any live Sheets/reporting flow.
 - Confirm whether `RedRobin_Reporting` should remain reference-only or be archived after `red-robin-recap` has fully replaced it.
